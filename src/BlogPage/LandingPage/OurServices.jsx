@@ -37,7 +37,7 @@ function ServiceBlock({ title, image, imageAlt, services }) {
 const ourServicesData = [
   {
     title: "MINING SERVICES",
-    image: "/assets/MiningImage.jpg", // Placeholder, use your actual path
+    image: "/assets/MiningServices.jpg", // Placeholder, use your actual path
     imageAlt: "A miner surveying an open-pit mine site",
     services: [
       {
@@ -56,7 +56,7 @@ const ourServicesData = [
   },
   {
     title: "CONSTRUCTION SERVICES",
-    image: "/assets/ConstructionImage.jpg", // Placeholder, use your actual path
+    image: "/assets/Construction.jpg", // Placeholder, use your actual path
     imageAlt: "A large industrial building under construction with cranes",
     services: [
       {
@@ -147,7 +147,7 @@ export default function CombinedPageLayout() {
       <AboutSection />
 
       {/* 1. Services Section (from the code you provided) */}
-      <section className="bg-white py-12 sm:py-20">
+      <section id="services" className="bg-white py-12 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* "Our Services" Header and Divider */}

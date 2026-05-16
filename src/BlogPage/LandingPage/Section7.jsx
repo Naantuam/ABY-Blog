@@ -5,25 +5,25 @@ const Section7 = () => {
     {
       id: 1,
       name: 'Global Mining Tactical Nig. LTD',
-      logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&h=100&fit=crop',
+      logo: '/assets/Global Mining.png',
       alt: 'Global Mining Tactical Nigeria Limited logo'
     },
     {
       id: 2,
       name: 'Gwena Consortium Nig. LTD',
-      logo: 'https://via.placeholder.com/100x100/1f2937/ffffff?text=G',
+      logo: '/assets/Gwana.png',
       alt: 'Gwena Consortium Nigeria Limited logo'
     },
     {
       id: 3,
       name: 'Ayoma Mines Co. LTD',
-      logo: 'https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=100&h=100&fit=crop',
+      logo: '/assets/Ayoma.png',
       alt: 'Ayoma Mines Company Limited logo'
     },
     {
       id: 4,
       name: 'Tri-Pot Integrated Mines Nig. LTD',
-      logo: 'https://via.placeholder.com/100x100/8b5cf6/ffffff?text=TP',
+      logo: '/assets/TripotMines.png',
       alt: 'Tri-Pot Integrated Mines Nigeria Limited logo'
     }
   ];
@@ -56,7 +56,7 @@ const Section7 = () => {
   ];
 
   return (
-    <div className="py-16 bg-white">
+    <div id="contact" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Partners Section */}
         <div className="mb-16">
@@ -93,7 +93,7 @@ const Section7 = () => {
           <div className="relative">
             <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop"
+                src="/assets/ContactUs.jpg"
                 alt="Construction worker on site"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />

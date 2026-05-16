@@ -2,7 +2,7 @@ import { Facebook, Twitter, Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-200 text-gray-800 py-4">
+    <footer id="footer" className="bg-slate-200 text-gray-800 py-4">
       {/* Reduced bottom padding on the max-w-7xl div (pb-3 to pb-0) and removed top padding (pt-6) */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -13,11 +13,11 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-center mb-3">Quick Links</h3>
             <ul className="space-y-3 items-center justify-center text-center text-base"> {/* Reduced space-y and text size */}
-              <li><a href="/home" className="text-black hover:text-blue-600 transition-colors">Home</a></li>
-              <li><a href="/about" className="text-black hover:text-blue-600 transition-colors">About</a></li>
-              <li><a href="/contact" className="text-black hover:text-blue-600 transition-colors">Contact</a></li>
-              <li><a href="/team" className="text-black hover:text-blue-600 transition-colors">Team</a></li>
-              <li><a href="/services" className="text-black hover:text-blue-600 transition-colors">Services</a></li>
+              <li><a href="#home" className="text-black hover:text-blue-600 transition-colors">Home</a></li>
+              <li><a href="#about" className="text-black hover:text-blue-600 transition-colors">About</a></li>
+              <li><a href="#contact" className="text-black hover:text-blue-600 transition-colors">Contact</a></li>
+              <li><a href="#team" className="text-black hover:text-blue-600 transition-colors">Team</a></li>
+              <li><a href="#services" className="text-black hover:text-blue-600 transition-colors">Services</a></li>
             </ul>
           </div>
 

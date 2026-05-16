@@ -3,11 +3,12 @@ export default function HeroSection() {
     <div className="min-h-screen">
       {/* ===== Hero Section ===== */}
       <section
+        id="home"
         className="relative min-h-screen bg-cover bg-center bg-no-repeat flex items-center"
-        style={{ backgroundImage: "url('/assets/HeroImage.png')" }} // replace with your actual hero image path
+        style={{ backgroundImage: "url('/assets/landingPage.jpg')" }} // replace with your actual hero image path
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="absolute inset-0"></div>
 
         {/* Content */}
         <div className="relative z-10 max-w-4xl px-6 sm:px-10 md:px-16 text-left text-white">
@@ -27,12 +28,12 @@ export default function HeroSection() {
       </section>
 
       {/* ===== About Section ===== */}
-      <section className="bg-white py-16 px-6 sm:px-10 md:px-20">
+      <section id="about" className="bg-white py-16 px-6 sm:px-10 md:px-20">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Image */}
           <div className="w-full">
             <img
-              src="/assets/AboutMining.png" // replace with your actual about image path
+              src="/assets/AboutABY.jpg" // replace with your actual about image path
               alt="Mining Workers"
               className="rounded-2xl shadow-md w-full h-auto object-cover"
             />

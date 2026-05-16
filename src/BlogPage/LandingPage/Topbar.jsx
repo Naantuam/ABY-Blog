@@ -1,10 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronRight, Menu, X } from "lucide-react";
 
 export default function Topbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
+
+  const textColorClass = isScrolled ? "text-blue-500" : "text-white";
 
   return (
     <>
@@ -23,30 +34,30 @@ export default function Topbar() {
 
             {/* Navigation Links */}
             <div className="flex items-center gap-14">
-              <a href="/" className="text-white font-semibold hover:underline">
+              <a href="#home" className={`${textColorClass} font-semibold hover:underline transition-colors duration-300`}>
                 Home
               </a>
               <a
-                href="/about"
-                className="text-white font-semibold hover:underline"
+                href="#about"
+                className={`${textColorClass} font-semibold hover:underline transition-colors duration-300`}
               >
                 About
               </a>
               <a
-                href="/team"
-                className="text-white font-semibold hover:underline"
+                href="#team"
+                className={`${textColorClass} font-semibold hover:underline transition-colors duration-300`}
               >
                 Team
               </a>
               <a
-                href="/contact"
-                className="flex items-center gap-1 text-white font-semibold hover:underline"
+                href="#contact"
+                className={`flex items-center gap-1 ${textColorClass} font-semibold hover:underline transition-colors duration-300`}
               >
                 Contact
               </a>
               <a
-                href="/blog"
-                className="flex items-center gap-1 text-white font-semibold hover:underline"
+                href="#footer"
+                className={`flex items-center gap-1 ${textColorClass} font-semibold hover:underline transition-colors duration-300`}
               >
                 Blog
                 <ChevronRight className="w-4 h-4" />
@@ -73,7 +84,7 @@ export default function Topbar() {
             <div className="flex items-center gap-3">
               <button
                 onClick={toggleSidebar}
-                className="text-white hover:text-gray-300 transition-colors"
+                className={`${textColorClass} hover:opacity-80 transition-colors duration-300`}
                 aria-label="Toggle menu"
               >
                 <Menu className="w-7 h-7" />
@@ -114,36 +125,29 @@ export default function Topbar() {
               {/* Sidebar Navigation */}
               <nav className="flex flex-col p-4 gap-4">
                 <a
-                  href="/"
-                  className="text-white font-medium hover:underline"
+                  href="#home"
+                  className="text-white font-medium hover:underline hover:text-blue-500 transition-colors duration-300"
                   onClick={toggleSidebar}
                 >
                   Home
                 </a>
                 <a
-                  href="/team"
-                  className="text-white font-medium hover:underline"
+                  href="#team"
+                  className="text-white font-medium hover:underline hover:text-blue-500 transition-colors duration-300"
                   onClick={toggleSidebar}
                 >
                   Team
                 </a>
                 <a
-                  href="/contact"
-                  className="text-white font-medium hover:underline"
+                  href="#contact"
+                  className="text-white font-medium hover:underline hover:text-blue-500 transition-colors duration-300"
                   onClick={toggleSidebar}
                 >
                   Contact
                 </a>
                 <a
-                  href="/partners"
-                  className="flex items-center gap-1 text-white font-medium hover:underline"
-                  onClick={toggleSidebar}
-                >
-                Partners
-                </a>
-                <a
-                  href="/blog"
-                  className="flex items-center gap-1 text-white font-medium hover:underline"
+                  href="#footer"
+                  className="flex items-center gap-1 text-white font-medium hover:underline hover:text-blue-500 transition-colors duration-300"
                   onClick={toggleSidebar}
                 >
                   Blog
