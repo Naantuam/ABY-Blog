@@ -37,7 +37,7 @@ const Section5 = () => {
         </div>
 
         {/* Hero Team Image */}
-        <div className="mb-8 relative rounded-2xl overflow-hidden shadow-2xl aspect-video md:aspect-[21/9] min-h-[350px] flex items-center justify-center p-8 sm:p-12">
+        <div className="mb-8 w-full relative rounded-2xl overflow-hidden shadow-2xl md:aspect-[21/9] min-h-[400px] md:min-h-[350px] flex items-center justify-center p-6 sm:p-12">
           {/* Background Image */}
           <img
             src="/assets/PreConstruction.png"
@@ -49,7 +49,7 @@ const Section5 = () => {
 
           {/* Team Description Text */}
           <div className="relative z-10 max-w-4xl mx-auto">
-            <p className="text-white text-base sm:text-lg lg:text-xl font-medium leading-relaxed text-center drop-shadow-lg">
+            <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl font-medium leading-relaxed text-center drop-shadow-lg">
               Our people are crucial in the delivery of our services and solution to our clients. In order to ensure that everyone is
               equipped with the right skill, knowledge and attitude, a comprehensive training programme is put in place to constantly
               upgrade our people in technical and management skills. We believe firmly in providing the right training, accredited

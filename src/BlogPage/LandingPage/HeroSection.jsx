@@ -1,10 +1,10 @@
 export default function HeroSection() {
   return (
-    <div className="min-h-screen">
+    <div>
       {/* ===== Hero Section ===== */}
       <section
         id="home"
-        className="relative min-h-screen bg-cover bg-center bg-no-repeat flex items-center"
+        className="relative min-h-[60vh] md:min-h-screen bg-cover bg-center bg-no-repeat flex items-start pt-28 pb-16 md:items-center md:pt-0 md:pb-0"
         style={{ backgroundImage: "url('/assets/landingPage.jpg')" }} // replace with your actual hero image path
       >
         {/* Overlay */}
@@ -15,7 +15,7 @@ export default function HeroSection() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
             Shaping the Future of Mining & Construction with Integrity.
           </h1>
-          <p className="text-base sm:text-lg md:text-xl mb-6 text-gray-200 max-w-2xl">
+          <p className="text-base sm:text-lg md:text-xl mb-6 text-white font-semibold max-w-2xl">
             We are committed to delivering high-quality mineral resources through
             safe, efficient, and sustainable operations. Our mission is to create
             long-term value for stakeholders while protecting the environment and

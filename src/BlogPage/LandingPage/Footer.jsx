@@ -4,11 +4,11 @@ export default function Footer() {
   return (
     <footer id="footer" className="bg-slate-200 text-gray-800 py-4">
       {/* Reduced bottom padding on the max-w-7xl div (pb-3 to pb-0) and removed top padding (pt-6) */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+      <div className="w-full px-2 sm:px-6 lg:px-8">
+
         {/* Added mb-4 to create a small gap before the bottom bar */}
         <div className="flex flex-row justify-around text-center md:text-left gap-6 md:gap-0 flex-wrap md:flex-nowrap">
-          
+
           {/* Column 1: Quick Links */}
           <div>
             <h3 className="text-lg font-semibold text-center mb-3">Quick Links</h3>
@@ -33,19 +33,19 @@ export default function Footer() {
                   placeholder="Email"
                   className="bg-white text-gray-900 px-3 py-1.5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-4/5 text-sm" // Reduced padding and width
                 />
-                <button 
+                <button
                   type="submit"
                   className="bg-blue-600 text-white px-4 py-1.5 rounded-md hover:bg-blue-700 transition-colors font-medium w-4/5 text-sm" // Reduced padding and width
                 >
                   Subscribe
                 </button>
                 <div className="flex justify-center h-40">
-                <img
-                  src="/assets/ABY.png" 
-                  alt="Aby diamond Mining & Construction LTD Logo"
-                  className="h-40 w-auto" 
-                />
-              </div>
+                  <img
+                    src="/assets/ABY.png"
+                    alt="Aby diamond Mining & Construction LTD Logo"
+                    className="h-40 w-auto"
+                  />
+                </div>
               </div>
             </form>
           </div>
@@ -77,9 +77,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar: Logo and Copyright */}
-        <div className="text-center"> 
-          
-          <p className="text-sm text-gray-700 mt-1 pb-2"> 
+        <div className="text-center">
+
+          <p className="text-sm text-gray-700 mt-1 pb-2">
             © Aby diamond Mining & Construction LTD 2025
           </p>
         </div>

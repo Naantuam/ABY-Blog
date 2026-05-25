@@ -12,7 +12,7 @@ import Footer from "./Footer";
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col w-full overflow-x-hidden">
       <Topbar />
       <main className="flex-grow">
         <HeroSection />
