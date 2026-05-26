@@ -10,7 +10,7 @@ const Section7 = () => {
     },
     {
       id: 2,
-      name: 'Gwena Consortium Nig. LTD',
+      name: 'Gwana Consortium Nig. LTD',
       logo: '/assets/Gwana.png',
       alt: 'Gwena Consortium Nigeria Limited logo'
     },
@@ -73,7 +73,7 @@ const Section7 = () => {
             {partners.map((partner) => (
               <div key={partner.id} className="flex flex-col items-center text-center group">
                 <div className="w-20 h-20 mb-4 rounded-full overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300 bg-white flex items-center justify-center">
-                  <img 
+                  <img
                     src={partner.logo}
                     alt={partner.alt}
                     className="w-16 h-16 object-contain group-hover:scale-105 transition-transform duration-300"
@@ -92,7 +92,7 @@ const Section7 = () => {
           {/* Contact Image */}
           <div className="relative">
             <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
-              <img 
+              <img
                 src="/assets/ContactUs.jpg"
                 alt="Construction worker on site"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
@@ -103,14 +103,14 @@ const Section7 = () => {
           {/* Contact Information */}
           <div className="space-y-6">
             <h2 className="text-2xl font-bold text-gray-900">Contact Information</h2>
-            
+
             <div className="space-y-4">
               {contactInfo.map((contact, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <span className="font-bold text-gray-900 w-20">
                     {contact.type}:
                   </span>
-                  <a 
+                  <a
                     href={contact.link}
                     className={`${contact.color} hover:underline transition-colors duration-300`}
                   >
