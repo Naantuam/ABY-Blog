@@ -11,8 +11,9 @@ export default function Footer() {
     setMessage('');
 
     // Client-side email validation
+    const trimmedEmail = email.trim();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!email || !emailRegex.test(email)) {
+    if (!trimmedEmail || !emailRegex.test(trimmedEmail)) {
       setStatus('error');
       setMessage('Please enter a valid email address.');
       return;
@@ -57,7 +58,7 @@ export default function Footer() {
           },
           body: JSON.stringify({
             api_key: apiKey.trim(),
-            email: email.trim(),
+            email: trimmedEmail,
           }),
         }
       );
@@ -135,6 +136,7 @@ export default function Footer() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     disabled={status === 'loading'}
+                    required
                     className="bg-white text-gray-900 px-3 py-1.5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-4/5 text-sm disabled:bg-gray-100 disabled:text-gray-500 transition-all"
                   />
                   <button
