@@ -6,22 +6,26 @@ const Section5 = () => {
       id: 1,
       name: 'DR MUSA DANJUMA',
       title: 'CEO of ABY LTD',
-      image: '/assets/Person1.jpg',
-      alt: 'Dr Musa Danjuma - CEO'
+      image: '/assets/CEO.jpg',
+      alt: 'Dr Musa Danjuma - CEO',
+      objectPosition: '18% 12%',
+      transform: 'scale(1.0)'
     },
-    {
-      id: 2,
-      name: 'Mrs AMINA USMAN',
-      title: 'Product Manager of ABY LTD',
-      image: '/assets/Person2.jpg',
-      alt: 'Mrs Amina Usman - Product Manager'
-    },
+    // {
+    //   id: 2,
+    //   name: 'Mrs AMINA USMAN',
+    //   title: 'Product Manager of ABY LTD',
+    //   image: '/assets/Person2.jpg',
+    //   alt: 'Mrs Amina Usman - Product Manager'
+    // },
     {
       id: 3,
       name: 'Mr JOHN AYUBA',
       title: 'COO of ABY LTD',
-      image: '/assets/Person3.jpg',
-      alt: 'Mr John Ayuba - COO'
+      image: '/assets/COO.jpg',
+      alt: 'Mr John Ayuba - COO',
+      objectPosition: 'center 26%',
+      transform: 'scale(1.0)'
     }
   ];
 
@@ -37,7 +41,7 @@ const Section5 = () => {
         </div>
 
         {/* Hero Team Image */}
-        <div className="mb-8 w-full relative rounded-2xl overflow-hidden shadow-2xl md:aspect-[21/9] min-h-[400px] md:min-h-[350px] flex items-center justify-center p-6 sm:p-12">
+        <div className="mb-20 w-full relative rounded-2xl overflow-hidden shadow-2xl md:aspect-[21/9] min-h-[400px] md:min-h-[350px] flex items-center justify-center p-6 sm:p-12">
           {/* Background Image */}
           <img
             src="/assets/PreConstruction.png"
@@ -60,15 +64,20 @@ const Section5 = () => {
         </div>
 
         {/* Team Members Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-8 mb-12 max-w-3xl mx-auto">
           {teamMembers.map((member) => (
             <div key={member.id} className="text-center group">
-              <div className="relative mb-6 mx-auto w-48 h-48">
+              <div className="relative mb-6 mx-auto w-48 h-48 md:w-64 md:h-64">
                 <div className="w-full h-full rounded-lg overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
                   <img
                     src={member.image}
                     alt={member.alt}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover transition-transform duration-300 [transform:var(--img-transform)] group-hover:[transform:var(--img-transform-hover)]"
+                    style={{
+                      objectPosition: member.objectPosition || 'center top',
+                      '--img-transform': member.transform || 'scale(1)',
+                      '--img-transform-hover': `${member.transform || 'scale(1)'} scale(1.05)`
+                    }}
                   />
                 </div>
               </div>
@@ -88,7 +97,7 @@ const Section5 = () => {
         {/* Additional Team Member (Bottom) */}
         <div className="flex justify-center">
           <div className="text-center group max-w-xs">
-            <div className="relative mb-6 mx-auto w-48 h-48">
+            <div className="relative mb-6 mx-auto w-48 h-48 md:w-64 md:h-64">
               <div className="w-full h-full rounded-lg overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
                 <img
                   src="/assets/TeamMember.jpg"
