@@ -24,7 +24,7 @@ export default function Topbar() {
           <a href="/" className="flex items-center">
             <img
               src="/assets/ABY.png"
-              alt="Company Logo"
+              alt="ABY Diamond Mines & Construction Logo"
               className="h-15 sm:h-16 md:h-28 lg:h-36 xl:h-40 w-auto object-contain transition-all duration-300"
             />
           </a>

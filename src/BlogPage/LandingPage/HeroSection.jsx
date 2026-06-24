@@ -13,6 +13,7 @@ export default function HeroSection() {
         {/* Content */}
         <div className="relative z-10 max-w-4xl px-6 sm:px-10 md:px-16 text-left text-white">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
+            <span className="block text-blue-600 text-lg sm:text-xl md:text-2xl font-bold uppercase tracking-wider mb-2">ABY Diamond Mines & Construction</span>
             Shaping the Future of Mining & Construction with Integrity.
           </h1>
           <p className="text-base sm:text-lg md:text-xl mb-6 text-white font-semibold max-w-2xl">
