@@ -4,7 +4,7 @@ const Section5 = () => {
   const teamMembers = [
     {
       id: 1,
-      name: 'DR MUSA DANJUMA',
+      name: 'MR YOHANNA ISHAYA',
       title: 'CEO of ABY LTD',
       image: '/assets/CEO.jpg',
       alt: 'Dr Musa Danjuma - CEO',
@@ -20,7 +20,7 @@ const Section5 = () => {
     // },
     {
       id: 3,
-      name: 'Mr JOHN AYUBA',
+      name: 'CNA HASSAN ISHAYA',
       title: 'COO of ABY LTD',
       image: '/assets/COO.jpg',
       alt: 'Mr John Ayuba - COO',
