@@ -31,26 +31,26 @@ const Section7 = () => {
   const contactInfo = [
     {
       type: 'CONTACT',
-      value: '+2348098800600',
-      link: 'tel:+2348098800600',
+      value: '+2348063333360',
+      link: 'tel:+2348063333360',
       color: 'text-blue-600'
     },
     {
       type: 'CONTACT',
-      value: '+234800533350',
-      link: 'tel:+234800533350',
+      value: '+2348063333360',
+      link: 'tel:+2348063333360',
       color: 'text-blue-600'
     },
     {
       type: 'EMAIL',
-      value: 'abydiamondmining@outlook.com',
-      link: 'mailto:abydiamondmining@outlook.com',
+      value: 'abydiamondmines62@gmail.com',
+      link: 'mailto:abydiamondmines62@gmail.com',
       color: 'text-blue-600'
     },
     {
       type: 'EMAIL',
-      value: 'abyayubaland24@gmail.com',
-      link: 'mailto:abyayubaland24@gmail.com',
+      value: 'abydiamondmines62@gmail.com',
+      link: 'mailto:abydiamondmines62@gmail.com',
       color: 'text-blue-600'
     }
   ];

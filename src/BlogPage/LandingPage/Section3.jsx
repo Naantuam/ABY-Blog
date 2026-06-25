@@ -141,14 +141,14 @@ const Section3 = () => {
               <div className="space-y-2 text-sm">
                 <p className="flex items-center text-gray-700">
                   <span className="font-semibold mr-2">CONTACT:</span>
-                  <a href="tel:+234806880060" className="text-blue-600 hover:underline">
-                    +234806880060
+                  <a href="tel:+2348063333360" className="text-blue-600 hover:underline">
+                    +2348063333360
                   </a>
                 </p>
                 <p className="flex items-center text-gray-700">
                   <span className="font-semibold mr-2">EMAIL:</span>
-                  <a href="mailto:abydiamondmine@outlook.com" className="text-blue-600 hover:underline">
-                    abydiamondmine@outlook.com
+                  <a href="mailto:abydiamondmines62@gmail.com" className="text-blue-600 hover:underline">
+                    abydiamondmines62@gmail.com
                   </a>
                 </p>
               </div>
